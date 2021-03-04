@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cool Calculator</title>
     <link rel="stylesheet" href="/styles/style.css">
+    <link rel="shortcut icon" href="/favicon-32x32.png" type="image/x-icon">
 </head>
 <body>
     <div class="bg">
@@ -14,74 +15,78 @@
 
     <div class="calc">
         <div class="screen">
-            <div class="clear">
+            <div class="clear" onclick="clr()">
                 C
             </div>
-            777
+            <div class="answer" id="answer">
+                
+            </div>
         </div>
         <div class="switches">
             <table>
                 <tr>
                     <td>
-                        <div class="switch">1</div>
+                        <div class="switch" onclick="one()">1</div>
                     </td>
                     <td>
-                        <div class="switch">2</div>
+                        <div class="switch" onclick="two()">2</div>
                     </td>
                     <td>
-                        <div class="switch">3</div>
+                        <div class="switch" onclick="three()">3</div>
                     </td>
                     <td rowspan="2">
-                        <div class="pluskey">+</div>
+                        <div class="pluskey" onclick="plus()">+</div>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <div class="switch">4</div>
+                        <div class="switch" onclick="four()">4</div>
                     </td>
                     <td>
-                        <div class="switch">5</div>
+                        <div class="switch" onclick="five()">5</div>
                     </td>
                     <td>
-                        <div class="switch">6</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="switch">7</div>
-                    </td>
-                    <td>
-                        <div class="switch">8</div>
-                    </td>
-                    <td>
-                        <div class="switch">9</div>
-                    </td>
-                    <td>
-                        <div class="switch">-</div>
+                        <div class="switch" onclick="six()">6</div>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <div class="switch">0</div>
+                        <div class="switch" onclick="seven()">7</div>
                     </td>
                     <td>
-                        <div class="switch">/</div>
+                        <div class="switch" onclick="eight()">8</div>
                     </td>
                     <td>
-                        <div class="switch">*</div>
+                        <div class="switch" onclick="nine()">9</div>
                     </td>
                     <td>
-                        <div class="switch" id="equals">=</div>
+                        <div class="switch" onclick="minus()">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="switch" onclick="zero()">0</div>
+                    </td>
+                    <td>
+                        <div class="switch" onclick="divide()">/</div>
+                    </td>
+                    <td>
+                        <div class="switch" onclick="multiply()">*</div>
+                    </td>
+                    <td>
+                        <div class="switch" id="equals" onclick="equal()">=</div>
                     </td>
                 </tr>
             </table>
         </div>
         
     </div>
+    <div class="logo">
+        <img src="/images/logo_green_alt.png" class="logopic">
+    </div>
 
 
-
-
-    <source src="/scripts/sctipt.js">
+    <source src="/scripts/sctipt.js" type="script">
+        <script src="/scripts/sctipt.js"></script>
 </body>
 </html>

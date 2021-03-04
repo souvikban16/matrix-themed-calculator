@@ -105,4 +105,25 @@
     border-radius: 15px 0 0 0 ;
 }
 
+.clear:hover{
+    filter: brightness(125%);
+}
+.clear:active{
+    filter: brightness(50%);
+}
 
+.switch:hover, .pluskey:hover,  .clear:hover{
+    cursor:pointer;
+}
+
+.logo{
+    position: absolute;
+    float: right;
+}
+
+.logopic{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    
+}
